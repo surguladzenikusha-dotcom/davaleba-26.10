@@ -110,57 +110,36 @@ opacity: 1;}
 .row div{padding: 15px;}
 
 
-.dog h1{margin-top: 50px;}
+.container-2{display: flex;
+             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;}
 
 
-.scene{
-    width: 600px;
-    max-width: 95%;
-    height: 150px;
-    margin: 100px auto;
-    position: relative;
-    background-color: #c9f0c1;
-    border-bottom: 5px solid #589b45;
-    overflow: hidden;
+.box-2{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    animation: loader 2s infinite;
+    border: dotted 14px green;
 }
 
 
-.dog{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    font-size: 60px;
-    animation: dogMove 6s infinite;
-}
 
-
-.bone{
-    position: absolute;
-    left: 320px;
-    bottom: 10px;
-    font-size: 40px;
-    animation: boneMove 6s infinite;
-}
-
-
-@keyframes dogMove{
-    0%{ transform: translateX(0)
-        
-     }
-
-     35% {transform: translateX(280px)
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
     }
 
-    45% {transform: translateX(280px)
-    }
-
-
-    85% {transform: translateX(0)
-    }
-
-
-    100% {transform: translateX(0)}
+    100%{transform: rotate(360deg);}
 }
+
+
+
 
 
 
